@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ========== SEO ========== -->
+  <title>FastMed Pharmacy Ajuy | Community Pharmacy in Poblacion, Ajuy, Iloilo</title>
+  <meta name="description" content="FastMed Pharmacy is a community pharmacy on Marina Street, Poblacion, Ajuy, Iloilo. Prescription dispensing, over-the-counter medicines, vitamins and health essentials. Open daily, 7:00 AM to 8:00 PM.">
+  <meta name="theme-color" content="#1261A0">
+  <meta name="robots" content="index, follow">
+  <!-- TODO after publishing: replace USERNAME with your GitHub username, then remove the comment markers -->
+  <!-- <link rel="canonical" href="https://USERNAME.github.io/fastmed-pharmacy/"> -->
+
+  <!-- ========== Open Graph (Facebook sharing) ========== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FastMed Pharmacy">
+  <meta property="og:title" content="FastMed Pharmacy Ajuy | Your Health. Our Priority.">
+  <meta property="og:description" content="Your community pharmacy on Marina Street, Poblacion, Ajuy, Iloilo. Open daily, 7:00 AM to 8:00 PM.">
+  <meta property="og:locale" content="en_PH">
+  <!-- TODO after publishing: Facebook needs FULL web addresses here. Upload a 1200x630 photo (e.g. images/og-image.jpg), then uncomment: -->
+  <!-- <meta property="og:url" content="https://USERNAME.github.io/fastmed-pharmacy/"> -->
+  <!-- <meta property="og:image" content="https://USERNAME.github.io/fastmed-pharmacy/images/og-image.jpg"> -->
+
+  <!-- ========== Favicon (built-in, no extra file needed) ========== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231261A0'/%3E%3Cpath d='M26 13h12v13h13v12H38v13H26V38H13V26h13z' fill='%23fff'/%3E%3Ccircle cx='51' cy='51' r='8' fill='%2320A66A' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+
+  <!-- ========== Fonts (free Google Fonts) ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data: ONLY facts confirmed by the owner (name, address, hours). No ratings, no coordinates. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pharmacy",
+    "name": "FastMed Pharmacy",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Marina Street, Poblacion",
+      "addressLocality": "Ajuy",
+      "addressRegion": "Iloilo",
+      "postalCode": "5012",
+      "addressCountry": "PH"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "20:00"
+    }],
+    "paymentAccepted": "Cash, GCash"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== Icon library (reused across the page) ========== -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-rx" viewBox="0 0 24 24"><path d="M6 20V4h5a4 4 0 0 1 0 8H6M10 12l9 9M19 14l-6 7"/></symbol>
+    <symbol id="i-pill" viewBox="0 0 24 24"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><path d="M9.5 9.5l5 5"/></symbol>
+    <symbol id="i-vitamin" viewBox="0 0 24 24"><rect x="6" y="8" width="12" height="13" rx="2.5"/><path d="M8 3h8v5H8zM9 14.5h6M12 11.5v6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-6.6 1-1a5.5 5.5 0 0 0 0-7.8z"/><path d="M3.5 12h4l2-3 3 6 2-3h5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8 11h8M8 14h5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6h11.5v10H2.5zM14 9h4l3.5 3.5V16H14"/><circle cx="6.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/><path d="M9.5 9.5l2 2 3.5-3.5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16a3 3 0 0 1 6 0M14.5 10h4M14.5 13.5h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0z"/><path d="M12 9v8"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></symbol>
+    <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M8.5 7.5c0-2 2-2 2-4M13.5 7.5c0-2 2-2 2-4"/></symbol>
+    <symbol id="i-firstaid" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M12 10v7M8.5 13.5h7"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-directions" viewBox="0 0 24 24"><path d="M12 2.5l9.5 9.5-9.5 9.5L2.5 12z"/><path d="M9 14v-2.5a1 1 0 0 1 1-1h5M13 8.5l2 2-2 2"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="FastMed Pharmacy, back to top">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1261A0"/>
+          <path d="M26 13h12v13h13v12H38v13H26V38H13V26h13z" fill="#fff"/>
+          <circle cx="51" cy="51" r="8" fill="#20A66A" stroke="#fff" stroke-width="3"/>
+        </svg>
+        <span class="brand-text"><strong>FastMed</strong><span>Pharmacy</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#essentials" class="nav-link">Health Essentials</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          <li class="nav-cta-mobile">
+            <a class="btn btn-primary btn-block" data-directions target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=FastMed+Pharmacy+Marina+Street+Poblacion+Ajuy+Iloilo">
+              <svg class="icon" aria-hidden="true"><use href="#i-directions"/></svg> Get Directions
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary nav-cta" data-directions target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=FastMed+Pharmacy+Marina+Street+Poblacion+Ajuy+Iloilo">
+        <svg class="icon" aria-hidden="true"><use href="#i-directions"/></svg> Get Directions
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Poblacion, Ajuy, Iloilo</p>
+          <h1 id="hero-title">Your Health. <span class="accent">Our Priority.</span></h1>
+          <p class="lead">Your community pharmacy in Ajuy, Iloilo, here to help you access the medicines and healthcare essentials you need.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary btn-lg" href="#location">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Find Our Pharmacy
+            </a>
+            <a class="btn btn-outline btn-lg" href="#contact">Contact Us</a>
+          </div>
+          <ul class="hero-facts" aria-label="Quick facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Open daily, 7:00 AM – 8:00 PM</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg> Cash &amp; GCash accepted</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> Delivery within Ajuy</li>
+          </ul>
+        </div>
+
+        <!-- Hero visual. To use a real storefront photo instead, see README ("Adding your own photos"). -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-panel">
+            <svg class="hero-cross" viewBox="0 0 64 64"><path d="M26 10h12v16h16v12H38v16H26V38H10V26h16z" fill="currentColor"/></svg>
+            <div class="hero-panel-text">
+              <span>FastMed Pharmacy</span>
+              <strong>Marina Street, Poblacion, Ajuy</strong>
+            </div>
+          </div>
+          <div class="float-chip chip-1"><svg class="icon" aria-hidden="true"><use href="#i-rx"/></svg> Prescription dispensing</div>
+          <div class="float-chip chip-2"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg> Serving PhilHealth GAMOT patients</div>
+          <div class="float-chip chip-3"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg> Reserve via Messenger</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">About Us</p>
+          <h2 id="about-title">A community pharmacy for Ajuy and nearby barangays</h2>
+          <p>FastMed Pharmacy serves residents of Ajuy and neighboring communities from our location on Marina Street in Poblacion. We aim to make everyday medicines and healthcare essentials easier to get, close to home.</p>
+          <p>Every visit is handled with care: we dispense medicines responsibly, take time to answer your questions, and help you understand how to take your medicines properly.</p>
+        </div>
+        <ul class="value-list">
+          <li>
+            <span class="value-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <div><h3>Accessible healthcare essentials</h3><p>Everyday medicines and wellness products within reach of the community.</p></div>
+          </li>
+          <li>
+            <span class="value-icon green"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <div><h3>Responsible medicine dispensing</h3><p>Prescription medicines are dispensed only with a valid prescription.</p></div>
+          </li>
+          <li>
+            <span class="value-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <div><h3>Customer-centered service</h3><p>Friendly, respectful help whether you are visiting, reserving, or asking a question.</p></div>
+          </li>
+          <li>
+            <span class="value-icon green"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg></span>
+            <div><h3>Professional pharmaceutical care</h3><p>Guidance on proper use, storage, and timing of your medicines.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <!-- Every card below is a service confirmed by the owner. Delete any card that stops being offered. -->
+    <section class="section section-tint" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Services</p>
+          <h2 id="services-title">Pharmacy services at FastMed Ajuy</h2>
+          <p>Practical, everyday pharmacy services for individuals and families.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-rx"/></svg></span>
+            <h3>Prescription medicine dispensing</h3>
+            <p>We fill prescriptions from your doctor and explain how to take your medicines.</p>
+            <p class="note note-rx"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg> A valid prescription is required for prescription-only medicines.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon green"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg></span>
+            <h3>Over-the-counter medicines</h3>
+            <p>Common non-prescription medicines for everyday concerns. Ask our staff if you are unsure what is right for you.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-vitamin"/></svg></span>
+            <h3>Vitamins and supplements</h3>
+            <p>Vitamins, minerals, and supplements for you and your family.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon green"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <h3>Basic health and wellness essentials</h3>
+            <p>Everyday health, hygiene, and first-aid items for the home.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span>
+            <h3>Medicine availability inquiries</h3>
+            <p>Ask us before you visit whether an item is in stock. <a href="#inquiry">Send an inquiry</a>.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon green"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+            <h3>Guidance on proper medicine use</h3>
+            <p>Clear explanations on dosage schedule, storage, and what to watch out for.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
+            <h3>Delivery within Ajuy</h3>
+            <p>We deliver orders within Ajuy. Message us to arrange a delivery.</p>
+            <p class="note note-rx"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg> Prescription-only medicines still require a valid prescription.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon green"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"/></svg></span>
+            <h3>Reservations via Messenger</h3>
+            <p>Reserve your items through our Facebook Messenger and pick them up at the store.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg></span>
+            <h3>PhilHealth GAMOT patients</h3>
+            <p>We serve PhilHealth GAMOT patients. Contact us to ask what to bring before your visit.</p>
+          </article>
+        </div>
+
+        <div class="pay-strip">
+          <svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg>
+          <p><strong>Payment options:</strong> Cash and GCash.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HEALTH ESSENTIALS ========== -->
+    <section class="section" id="essentials" aria-labelledby="essentials-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Health Essentials</p>
+          <h2 id="essentials-title">Product categories you can ask us about</h2>
+          <p>These are general categories, not a live stock list. Availability changes, so please ask before you visit.</p>
+        </div>
+
+        <ul class="category-grid">
+          <li class="category"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-thermo"/></svg></span><span>Pain &amp; fever relief</span></li>
+          <li class="category"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg></span><span>Cough, colds &amp; allergy relief</span></li>
+          <li class="category"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-vitamin"/></svg></span><span>Vitamins &amp; minerals</span></li>
+          <li class="category"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-bowl"/></svg></span><span>Digestive health</span></li>
+          <li class="category"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-firstaid"/></svg></span><span>First-aid supplies</span></li>
+          <li class="category"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg></span><span>Personal care</span></li>
+        </ul>
+
+        <div class="center">
+          <a class="btn btn-green btn-lg" href="#inquiry">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg> Ask about product availability
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE ========== -->
+    <section class="section section-brand" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head on-dark">
+          <p class="section-kicker">Why FastMed?</p>
+          <h2 id="why-title">Why customers choose FastMed</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <h3>Convenient community location</h3>
+            <p>On Marina Street in Poblacion, easy to reach for Ajuy residents.</p>
+          </article>
+          <article class="why-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-users"/></svg>
+            <h3>Customer-focused service</h3>
+            <p>We listen, answer questions, and help you find what you need.</p>
+          </article>
+          <article class="why-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-firstaid"/></svg>
+            <h3>Healthcare essentials</h3>
+            <p>Medicines, vitamins, and everyday health items in one stop.</p>
+          </article>
+          <article class="why-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <h3>Responsible pharmacy practice</h3>
+            <p>Safe dispensing that follows prescription requirements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOCATION ========== -->
+    <section class="section" id="location" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div class="location-card">
+          <p class="section-kicker">Location</p>
+          <h2 id="location-title">Visit FastMed Pharmacy</h2>
+          <address class="address-block">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span><strong>FastMed Pharmacy</strong><br>
+            <span id="full-address">Marina Street, Poblacion, Ajuy, Iloilo 5012, Philippines</span></span>
+          </address>
+          <p class="hours-line">
+            <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+            <span data-config-text="hours">Open daily, 7:00 AM – 8:00 PM</span>
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" data-directions target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=FastMed+Pharmacy+Marina+Street+Poblacion+Ajuy+Iloilo">
+              <svg class="icon" aria-hidden="true"><use href="#i-directions"/></svg> Get Directions
+            </a>
+            <button class="btn btn-outline" type="button" id="copy-address">
+              <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg> Copy address
+            </button>
+          </div>
+          <p class="small muted" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+        <div class="map-frame">
+          <iframe
+            id="map"
+            title="Map showing FastMed Pharmacy, Marina Street, Poblacion, Ajuy, Iloilo"
+            src="https://maps.google.com/maps?q=FastMed%20Pharmacy%2C%20Marina%20Street%2C%20Poblacion%2C%20Ajuy%2C%20Iloilo&amp;z=16&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section section-tint" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Contact Us</p>
+          <h2 id="contact-title">Get in touch</h2>
+          <p>Questions about a medicine, a reservation, or delivery? Reach us through any of the channels below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact details are filled in from the CONFIG section at the top of script.js -->
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div><h3>Phone</h3><p data-contact="phone"><span class="muted">Phone number coming soon</span></p></div>
+            </li>
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></span>
+              <div><h3>Facebook</h3><p data-contact="facebook"><span class="muted">Facebook page link coming soon</span></p></div>
+            </li>
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+              <div><h3>Messenger</h3><p data-contact="messenger"><span class="muted">Messenger link coming soon</span></p></div>
+            </li>
+            <li data-contact-row="email">
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div><h3>Email</h3><p data-contact="email"><span class="muted">Email address coming soon</span></p></div>
+            </li>
+            <li>
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div><h3>Business hours</h3><p data-config-text="hours">Open daily, 7:00 AM – 8:00 PM</p></div>
+            </li>
+          </ul>
+
+          <!-- Product availability inquiry -->
+          <div class="form-card" id="inquiry">
+            <h3>Product availability inquiry</h3>
+            <p class="small">This form does not send anything by itself. It prepares a message that you then send through your own Messenger, email, or SMS app.</p>
+
+            <form id="inquiry-form" novalidate>
+              <div class="field">
+                <label for="inq-name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input id="inq-name" name="name" type="text" autocomplete="given-name" maxlength="60" required>
+              </div>
+              <div class="field">
+                <label for="inq-product">Product or medicine name <span class="req" aria-hidden="true">*</span></label>
+                <input id="inq-product" name="product" type="text" maxlength="100" required placeholder="e.g. brand or generic name, strength">
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="inq-qty">Quantity</label>
+                  <input id="inq-qty" name="qty" type="text" maxlength="30" placeholder="e.g. 1 box">
+                </div>
+                <div class="field">
+                  <label for="inq-channel">Send using</label>
+                  <select id="inq-channel" name="channel"></select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="inq-notes">Short note (optional)</label>
+                <textarea id="inq-notes" name="notes" rows="3" maxlength="300" placeholder="e.g. for pickup tomorrow afternoon"></textarea>
+              </div>
+              <p class="privacy-hint">
+                <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+                Please do <strong>not</strong> include medical history, diagnoses, prescriptions, or ID numbers. Bring your prescription to the store instead.
+              </p>
+              <button class="btn btn-primary btn-block" type="submit">Prepare my inquiry</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#home">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#fff"/>
+            <path d="M26 13h12v13h13v12H38v13H26V38H13V26h13z" fill="#1261A0"/>
+            <circle cx="51" cy="51" r="8" fill="#20A66A" stroke="#1261A0" stroke-width="3"/>
+          </svg>
+          <span class="brand-text"><strong>FastMed</strong><span>Pharmacy</span></span>
+        </a>
+        <p>Marina Street, Poblacion,<br>Ajuy, Iloilo 5012, Philippines</p>
+        <p data-config-text="hours">Open daily, 7:00 AM – 8:00 PM</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#essentials">Health Essentials</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul class="footer-links" id="footer-contact">
+          <li data-footer="phone" hidden></li>
+          <li data-footer="facebook" hidden></li>
+          <li data-footer="email" hidden></li>
+          <li><a data-directions target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=FastMed+Pharmacy+Marina+Street+Poblacion+Ajuy+Iloilo">Get Directions</a></li>
+        </ul>
+      </div>
+
+      <div id="privacy">
+        <h2 class="footer-title">Privacy notice</h2>
+        <p class="small">This website does not use accounts, cookies for tracking, or a database, and it does not store anything you type. The inquiry form only prepares a message in your own app. The embedded Google Map is provided by Google and is subject to Google's privacy policy.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="disclaimer"><strong>Health information disclaimer:</strong> The content on this website is for general information only and does not replace professional medical advice, diagnosis, or treatment. Always consult your doctor or pharmacist about your health and medicines. In an emergency, go to the nearest hospital or call 911.</p>
+      <p class="small">&copy; <span id="year">2026</span> FastMed Pharmacy, Ajuy, Iloilo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
